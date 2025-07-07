@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+}
+
+.app-header {
+  height: 60px;
+  padding: 10px 20px;
+  background-color: rgb(55, 73, 235);
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-content {
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: 600px;
+  width: 100%;
+}
+
+.search-container input {
+  flex: 1;
+  padding: 12px 16px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 24px;
+  transition: border-color 0.3s ease;
+}
+
+.search-container input:focus {
+  outline: none;
+  border-color: rgb(55, 73, 235);
+  box-shadow: 0 0 5px rgba(55, 73, 235, 0.3);
+}
+
+.search-button {
+  padding: 12px 20px;
+  font-size: 16px;
+  background-color: rgb(55, 73, 235);
+  color: #fff;
+  border: none;
+  border-radius: 24px;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: rgb(45, 63, 200);
+}
+
+.results {
+  width: 100%;
+  max-width: 800px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.result-items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.result-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 1.5px solid #ddd;
+  border-radius: 12px;
+  background-color: #fafafa;
+  padding: 10px;
+}
+
+.image {
+  border-radius: 15px;
+  width: 100%;
+}
+
+img {
+  height: auto;
+  border-radius: 15px;
+  max-width: 100%;
+}
+
+.loadMoreBtn {
+  display: none;
+  justify-content: center;
+  width: 110px;
+  height: 50px;
+  padding: 5px;
+  margin: 0 auto;
+  border-radius: 50px;
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+  background-color: rgb(55, 73, 235);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.loadMoreBtn:hover {
+  background-color: rgb(45, 63, 200);
+}
